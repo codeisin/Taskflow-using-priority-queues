@@ -9,7 +9,6 @@ const __dirname = path.dirname(__filename);
 const app = express();
 app.use(express.json());
 
-// ✅ Serve static files directly from root
 app.use(express.static(__dirname));
 
 // 🧠 In-memory Priority Queue
@@ -44,3 +43,4 @@ const PORT =3000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
+
